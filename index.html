@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <script>
+    function highlightCardImage() {
+      document.getElementById('cardImage').style.opacity = '0.5'
+      document.getElementById('cardImageView').style.display = 'block'
+    }
+
+    function unhighlightCardImage() {
+      document.getElementById('cardImage').style.opacity = '1'
+      document.getElementById('cardImageView').style.display = 'none'
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <main class="content">
+    <div class="cardWrapper">
+
+      <div class="imageBackground">
+        <img onmouseover="highlightCardImage()" onmouseout="unhighlightCardImage()" class="cardImage" id="cardImage"
+          src="./images/image-equilibrium.jpg" alt="3d clear cube with red light shining through it" />
+        <img onmouseover="highlightCardImage()" onmouseout="unhighlightCardImage()" class="cardHoverImage"
+          id="cardImageView" src="./images/icon-view.svg" alt="eye" />
+      </div>
+      <p class="cardTitle">
+        Equilibrium #3429
+      </p>
+
+      <p>
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+
+      <div class="cardWrapperSplitLine">
+
+        <div class="icon-text">
+          <img class="icon" src="./images/icon-ethereum.svg" alt="ethereum icon" />
+          <p class="price">
+            0.041 ETH
+          </p>
+        </div>
+
+        <div class="icon-text">
+          <img class="icon" src="./images/icon-clock.svg" alt="clock icon" />
+          <p>
+            3 days left
+          </p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="icon-text">
+        <img class="cardAvatar" src="./images/image-avatar.png" alt="Jules Wyvern Avatar Icon" />
+        <p>Creation of<span class="white"> Jules Wyvern</span></p>
+      </div>
+    </div>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Bill McDavitt</a>.
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+body {
+  background-color: hsl(217, 54%, 11%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  font-family: 'Outfit', sans-serif;
+}
+
+p {
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+  line-height: 1.5em;
+  font-size: 1em;
+  margin: 0;
+}
+
+/* https://stackoverflow.com/questions/14821087/horizontal-line-and-right-way-to-code-it-in-html-css */
+hr {
+  height: 1px;
+  border: 0;
+  border-top: 0.01em solid hsl(215, 51%, 70%);
+}
+
+.icon {
+  height: 17px;
+  margin: auto 0.5em auto 0;
+}
+
+.cardTitle {
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  margin: 1em 0;
+
+  font-size: 1.25em;
+}
+
+.cardTitle:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.cardWrapper {
+  background-color: hsl(216, 50%, 16%);
+  width: min(80vw, 300px);
+  border-radius: 15px;
+  padding: 1em;
+}
+
+/* https://stackoverflow.com/questions/23469332/highlight-images-on-hover-on-any-background */
+
+.imageBackground {
+  position: relative;
+  background-color: hsl(178, 100%, 50%);
+  display: inline-block;
+  margin: 0;
+  border-radius: 18px;
+  width: min(80vw, 300px);
+  height: min(80vw, 300px);
+}
+
+.cardImage {
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+}
+
+.cardHoverImage {
+  position: absolute;
+  top: 42%;
+  left: 42%;
+
+  display: none;
+}
+
+.cardWrapperSplitLine {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
+}
+
+.icon-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.price {
+  color: hsl(178, 100%, 50%);
+}
+
+.cardAvatar {
+  height: 2em;
+  margin: auto 0.5em auto 1em;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+
+.white {
+  color: hsl(0, 0%, 100%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
